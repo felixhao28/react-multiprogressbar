@@ -1,0 +1,84 @@
+
+.progressbar-container {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.progressbar-container > span {
+  display: table-row-group;
+  -moz-box-shadow: #2CB6C9 0 0 10px 1px;
+  -ms-box-shadow: #2CB6C9 0 0 10px 1px;
+  -webkit-box-shadow: #2CB6C9 0 0 5px 1px;
+  box-shadow: #2CB6C9 0 0 10px 2px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.progressbar-progress {
+  display: table-cell;
+  float: none;
+  font-size: 20px;
+  transition: width 200ms;
+  background-color: lightgrey;
+  white-space: nowrap;
+}
+
+.progressbar-progress-complete {
+  background-color: #2ca02c;
+  text-align: center;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  transition: width 200ms;
+}
+
+.progressbar-progress-failed {
+  background-color: #d62728;
+  display: table-cell;
+  text-align: center;
+}
+
+.progressbar-progress-bar {
+  background-color: #1f77b4;
+  text-align: center;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  transition: width 200ms;
+}
+
+.progressbar-progress-failed > span.glyphicon.glyphicon-remove {
+  cursor: pointer;
+}
+
+.progressbar-progress-content {
+  float: left;
+}
+
+.progressbar-progress-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.progressbar-animate-enter {
+  opacity: 0.01;
+  transition: opacity 1s ease-in;
+}
+
+.progressbar-animate-enter.progressbar-animate-enter-active {
+  opacity: 1;
+}
+
+.progressbar-animate-leave {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.progressbar-animate-leave.progressbar-animate-leave-active {
+  opacity: 0.01;
+}
+
