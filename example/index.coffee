@@ -11,7 +11,7 @@ App = React.createClass
         p = ProgressControl.add("progress #{progressCount++}")
         setTimeout ->
             p.complete()
-        , 2000
+        , 5000
 
     add3: ->
         p = ProgressControl.add("progress #{progressCount++}")
@@ -23,7 +23,7 @@ App = React.createClass
         p = ProgressControl.add("progress #{progressCount++}")
         setTimeout ->
             p.fail("another one")
-        , 2000
+        , 5000
 
     add5: ->
         p = ProgressControl.add("progress #{progressCount++}", 20)

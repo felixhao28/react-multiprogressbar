@@ -16,7 +16,7 @@ var component = React.createClass({
     setTimeout(function(){
             taskA.complete();
             taskB.fail("failure information");
-        }, 2000)
+        }, 2000);
   }
 
   render: function() {
