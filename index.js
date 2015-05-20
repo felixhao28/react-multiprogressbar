@@ -16,7 +16,7 @@ App = React.createClass({
     p = ProgressControl.add("progress " + (progressCount++));
     return setTimeout(function() {
       return p.complete();
-    }, 2000);
+    }, 5000);
   },
   add3: function() {
     var p;
@@ -30,7 +30,7 @@ App = React.createClass({
     p = ProgressControl.add("progress " + (progressCount++));
     return setTimeout(function() {
       return p.fail("another one");
-    }, 2000);
+    }, 5000);
   },
   add5: function() {
     var p;
